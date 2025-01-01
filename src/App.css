@@ -1,0 +1,263 @@
+/* App.css */
+html {
+	scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: "Hanken Grotesk", sans-serif;
+  background-color: #191A1A;
+  color: #E7E7E5;
+  font-size:16px;
+}
+input:focus{
+  outline:none;
+}
+a{
+  font-weight:600;
+}
+button{
+  background-color: #21B7CD;
+  color: #E7E7E5;
+  border: none;
+  padding: 9px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight:600;
+  transition: .4s all;
+}
+button:hover{
+  opacity: .8;
+}
+.option-button,.buy-shares button{
+  width: calc(50% - 10px);
+}
+.option-button.green {
+  background-color: #21B7CD;
+  color: #E7E7E5;
+}
+
+.option-button.red {
+  background-color:#E7E7E5;
+  color: #191A1A;
+}
+
+.App {
+  text-align: center;
+}
+
+.top-menu {
+  background-color: #202222;
+  border-bottom:1px solid rgba(255,255,255,0.15);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-menu-link {
+  color:#E7E7E5;
+  background: #2C2F2F;
+  border-radius: 3px;
+  padding: 5px 10px;
+  text-decoration: none;
+  font-size: 12px;
+  transition:.4s all;
+  display: flex;
+  align-items: center;
+}
+.top-menu-link:hover {
+  opacity:.6;
+}
+.top-menu-link svg {
+  width: 10px;
+  margin-right: 8px;
+}
+header {
+  background-color: #191a1a;
+  border-bottom:1px solid rgba(255,255,255,0.15);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;;
+}
+
+.logo-link {
+  text-decoration: none;
+}
+.logo {
+  height: 35px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.wallet-info {
+  display: flex;
+  align-items: center;
+}
+
+.wallet-info span {
+  margin-right: 10px;
+  font-size: 14px;
+}
+.about-link {
+  color: #8C9191;
+  text-decoration: none;
+  font-size: 14px;
+  margin-left: 20px;
+  transition:.4s all;
+}
+.about-link:hover{
+  color:#E7E7E5;
+}
+.app-body {
+  padding: 20px 30px 50px;
+  margin: 0 auto;
+  text-align: center;
+  min-height:70vh;
+}
+h2{
+  font-weight: 600;
+  font-size:25px;
+}
+.app-body h1,h1 {
+  font-size: 30px;
+  font-weight: 500;
+}
+.app-body h3,h3 {
+  font-size: 19px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.app-body h4,h4 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.app-body p,p {
+  margin-bottom: 10px;
+}
+.market-tabs {
+  margin-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  display:flex;
+  gap:40px;
+  justify-content: center;
+  background: #202222;
+}
+.market-tabs button {
+  background: transparent;
+  color: #8c9191;
+  font-size: 15px;
+  padding: 15px 0px;
+  border-radius: 0;
+  transition:.4s all;
+}
+.market-tabs button.active{
+  color:#E7E7E5;
+  border-bottom:2.5px solid #E7E7E5;
+}
+.market-tabs button:hover{
+  color:#E7E7E5;
+  opacity: 1;
+}
+.markets {
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer {
+  background-color: #343a40;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+}
+/* General styles */
+.dropdown-container {
+  display: none; /* Hide dropdown on desktop */
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #202222;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 4px;
+  width: 200px;
+  display: none;
+  flex-direction: column;
+  margin-top:10px;
+}
+.dropdown.open{
+  display: flex;
+}
+
+.dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+  text-align: left;
+  color:#E7E7E5;
+  text-decoration: none;
+}
+.dropdown-arrow {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+  margin-right:-25px;
+}
+
+.dropdown-arrow.open {
+  transform: rotate(180deg);
+}
+
+.thumbnail {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #228090, #21B7CD);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  cursor: pointer;
+  position: relative;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .header-right {
+    display: none; /* Hide desktop header-right */
+  }
+
+  .dropdown-container {
+    display: flex; /* Show dropdown container */
+  }
+}
+@media only screen and (max-width: 767px) {
+  .markets {
+    gap: 30px;
+  }
+  .market {
+    width: 100%;
+  }
+  .market-tabs {
+    gap:15px;
+  }
+}

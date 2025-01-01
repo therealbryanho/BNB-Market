@@ -1,0 +1,376 @@
+.market {
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #202222;
+    width: calc(33.3% - 55px);
+  }
+  .market p{
+    font-size:13px;
+  }
+  .market h3 {
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    padding-bottom: 15px;
+    margin-top:30px;
+  }
+  .market h4{
+    margin-top:0;
+    text-align: center;
+  }
+
+  .market p .bold-text {
+    font-weight: bold;
+  }
+
+  .market .claim-winnings-button {
+    background-color: green;
+    width: 100%;
+} 
+  .market button:disabled {
+    background-color: #2d2f2f;
+    color: #8d9191;
+    cursor: not-allowed;
+  }
+  
+  .market gecko-coin-price-chart-widget {
+    margin-bottom: 20px;
+  }
+  .market-open {
+    background-color: #21B7CD;
+    color: #2d2f2f;
+    border-radius:2px;
+    font-size:11px;
+    text-transform: uppercase;
+    padding: 3px 5px;
+    font-weight:600;
+    margin-right:10px;
+  }
+  .market-resolved{
+    background-color:#2E565D;
+    color: #E7E7E5;
+    border-radius:2px;
+    font-size:11px;
+    text-transform: uppercase;
+    padding: 3px 5px;
+    font-weight:600;
+    margin-right:10px;
+  }
+  .market-ended {
+    color: #E7E7E5;
+    background-color:#954455;
+    border-radius:2px;
+    font-size:11px;
+    text-transform: uppercase;
+    padding: 3px 5px;
+    font-weight:600;
+    margin-right:10px;
+  }
+  
+  .pending-resolution {
+    color: #191A1A;
+    background-color:#FFD2A6;
+    border-radius:2px;
+    font-size:11px;
+    text-transform: uppercase;
+    padding: 3px 5px;
+    font-weight:600;
+    margin-right:10px;
+  }
+  
+  p.end-time {
+    font-size: 13px;
+    font-weight: bold;
+    color: #8C9191;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  .buy-shares{
+    margin-bottom:20px;
+    display:flex;
+    flex-wrap: wrap;
+    gap:15px;
+  }
+  .buy-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .confirm-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .cancel-button {
+    background-color: #2d2f2f;
+    color: #E7E7E5;
+  }
+  .market-blocks {
+    background: #2d2f2f;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom:20px;
+}
+.market-overview-text {
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+.market-overview-text p {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  color:#8C9191;
+}
+.market-overview-text p.yes span{
+  color:#21B7CD;
+  text-align: left;
+}
+.market-overview-text p.no span{
+  color:#E5E3D3;
+  text-align: right;
+}
+.market-blocks.market-outcome h4 {
+  margin: 0;
+}
+.market-blocks.market-outcome {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.market-blocks.market-outcome p {
+  margin: 0;
+}
+.fill-empty-space {
+  border-color: #202222;
+  border-bottom: 1px dashed #8C9191;
+  width: 100%;
+  margin: 0 10px;
+  opacity: .35;
+  transform: translateY(-4px);
+}
+.your-shares{
+  margin: 20px auto 5px;
+    font-size: 13px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+}
+.your-share-amt {
+  display: flex;
+  justify-content: space-between;
+  color: #8C9191;
+}
+.your-share-amt span {
+  font-weight: 600;
+  color: #E7E7E5;
+  white-space: nowrap;
+}
+
+.news-feed {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.news-item {
+  background: #2c3136;
+  border-radius: 10px;
+  padding: 15px 20px;
+  color: #e7e7e5;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.news-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.news-title {
+  margin: 0;
+  font-size: 1em;
+  color: #21b7cd;
+}
+
+.news-date {
+  font-size: 0.85em;
+  color: #a5a5a5;
+  margin: 5px 0 10px 0;
+}
+
+.sentiment-label {
+  font-size: 0.9em;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.sentiment-label.bullish {
+  background-color: green;
+  color: #fff;
+}
+
+.sentiment-label.bearish {
+  background-color: #954455;
+  color: #fff;
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.tab-button {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  background-color: #202222;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.tab-button.active {
+  background-color: #21B7CD;
+  font-weight: bold;
+}
+
+.tab-content {
+  margin-top: 10px;
+}
+
+.community-feed form {
+  margin-bottom: 20px;
+}
+
+.community-feed label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.community-feed input,
+.community-feed textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.community-feed button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #21B7CD;
+  color: #fff;
+  cursor: pointer;
+}
+
+.community-feed button:hover {
+  background-color: #1a9bbc;
+}
+
+.comments-list .comment {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.comment-text {
+  text-align: left;
+}
+
+.comments-list .comment p {
+  margin: 5px 0;
+}
+
+.comments-list .comment button {
+  background-color: #954455;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.comments-list .comment button:hover {
+  background-color: #7e3944;
+}
+
+.community-feed form {
+  margin-bottom: 20px;
+}
+
+.community-feed label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.community-feed input,
+.community-feed textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.community-feed button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #21B7CD;
+  color: #fff;
+  cursor: pointer;
+}
+
+.community-feed button:hover {
+  background-color: #1a9bbc;
+}
+
+.comments-list .comment {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.comments-list .comment p {
+  margin: 5px 0;
+}
+
+.comment-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.comment-meta strong {
+  margin-right: 10px;
+}
+
+.comment-meta span {
+  margin-right: 10px;
+  color: #666;
+}
+
+.flag-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #954455;
+}
+
+.flag-button:hover {
+  color: #7e3944;
+}

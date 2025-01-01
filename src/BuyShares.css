@@ -1,0 +1,16 @@
+.buy-shares input[type="number"] {
+  width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: none;
+    border: 1.5px solid #3d3f40;
+    background: #202222;
+    color:#E7E7E5;
+}
+p.fine-print{
+  width:100%;
+}
+.buy-shares p{
+  width:100%;
+  text-align: center;
+}
